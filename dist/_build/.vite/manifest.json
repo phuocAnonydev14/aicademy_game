@@ -1,0 +1,234 @@
+{
+  "/home/phuoc/Icetea/aicademy/aicademy-frontend/src/styles/app.css": {
+    "file": "assets/app-sM_Fki-C.css",
+    "src": "/home/phuoc/Icetea/aicademy/aicademy-frontend/src/styles/app.css"
+  },
+  "__vite-browser-external": {
+    "file": "assets/__vite-browser-external-BIHI7g3E.js",
+    "name": "__vite-browser-external",
+    "src": "__vite-browser-external",
+    "isDynamicEntry": true
+  },
+  "_client-BgVU6seZ.js": {
+    "file": "assets/client-BgVU6seZ.js",
+    "name": "client",
+    "dynamicImports": [
+      "__vite-browser-external",
+      "__vite-browser-external",
+      "__vite-browser-external",
+      "__vite-browser-external",
+      "src/routes/deferred.tsx?tsr-split=component",
+      "src/routes/_pathlessLayout.tsx?tsr-split=component",
+      "src/routes/$postId.tsx?tsr-split=component",
+      "src/routes/$postId.tsx?tsr-split=notFoundComponent",
+      "src/routes/$postId.tsx?tsr-split=errorComponent",
+      "src/routes/courses/route.tsx?tsr-split=component",
+      "src/routes/index.tsx?tsr-split=component",
+      "src/routes/courses/index.tsx?tsr-split=component",
+      "src/routes/game/order-game.tsx?tsr-split=component",
+      "src/routes/game/link-game.tsx?tsr-split=component",
+      "src/routes/game/blind-box-game.tsx?tsr-split=component",
+      "src/routes/courses/$postId.tsx?tsr-split=component",
+      "src/routes/courses/$postId.tsx?tsr-split=notFoundComponent",
+      "src/routes/_pathlessLayout/_nested-layout.tsx?tsr-split=component",
+      "src/routes/courses_.$postId.deep.tsx?tsr-split=component",
+      "src/routes/courses_.$postId.deep.tsx?tsr-split=errorComponent",
+      "src/routes/_pathlessLayout/_nested-layout/route-b.tsx?tsr-split=component",
+      "src/routes/_pathlessLayout/_nested-layout/route-a.tsx?tsr-split=component"
+    ],
+    "assets": [
+      "assets/app-sM_Fki-C.css"
+    ]
+  },
+  "_refresh-cw-XXV2z-LI.js": {
+    "file": "assets/refresh-cw-XXV2z-LI.js",
+    "name": "refresh-cw",
+    "imports": [
+      "_client-BgVU6seZ.js"
+    ]
+  },
+  "_useSuspenseQuery-BHvl87w7.js": {
+    "file": "assets/useSuspenseQuery-BHvl87w7.js",
+    "name": "useSuspenseQuery",
+    "imports": [
+      "_client-BgVU6seZ.js"
+    ]
+  },
+  "src/routes/$postId.tsx?tsr-split=component": {
+    "file": "assets/_postId-DoP7l1NR.js",
+    "name": "_postId",
+    "src": "src/routes/$postId.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js"
+    ]
+  },
+  "src/routes/$postId.tsx?tsr-split=errorComponent": {
+    "file": "assets/_postId-D_lUi16H.js",
+    "name": "_postId",
+    "src": "src/routes/$postId.tsx?tsr-split=errorComponent",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js"
+    ]
+  },
+  "src/routes/$postId.tsx?tsr-split=notFoundComponent": {
+    "file": "assets/_postId-BvlBLc-A.js",
+    "name": "_postId",
+    "src": "src/routes/$postId.tsx?tsr-split=notFoundComponent",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js"
+    ]
+  },
+  "src/routes/_pathlessLayout.tsx?tsr-split=component": {
+    "file": "assets/_pathlessLayout-CCbfyciE.js",
+    "name": "_pathlessLayout",
+    "src": "src/routes/_pathlessLayout.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js"
+    ]
+  },
+  "src/routes/_pathlessLayout/_nested-layout.tsx?tsr-split=component": {
+    "file": "assets/_nested-layout-BgwYaAoO.js",
+    "name": "_nested-layout",
+    "src": "src/routes/_pathlessLayout/_nested-layout.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js"
+    ]
+  },
+  "src/routes/_pathlessLayout/_nested-layout/route-a.tsx?tsr-split=component": {
+    "file": "assets/route-a-B_9mkVEy.js",
+    "name": "route-a",
+    "src": "src/routes/_pathlessLayout/_nested-layout/route-a.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js"
+    ]
+  },
+  "src/routes/_pathlessLayout/_nested-layout/route-b.tsx?tsr-split=component": {
+    "file": "assets/route-b-B89cdPOQ.js",
+    "name": "route-b",
+    "src": "src/routes/_pathlessLayout/_nested-layout/route-b.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js"
+    ]
+  },
+  "src/routes/courses/$postId.tsx?tsr-split=component": {
+    "file": "assets/_postId-BWczc5T3.js",
+    "name": "_postId",
+    "src": "src/routes/courses/$postId.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js",
+      "_useSuspenseQuery-BHvl87w7.js"
+    ]
+  },
+  "src/routes/courses/$postId.tsx?tsr-split=notFoundComponent": {
+    "file": "assets/_postId-COMxO3ZL.js",
+    "name": "_postId",
+    "src": "src/routes/courses/$postId.tsx?tsr-split=notFoundComponent",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js"
+    ]
+  },
+  "src/routes/courses/index.tsx?tsr-split=component": {
+    "file": "assets/index-B3fXfjPI.js",
+    "name": "index",
+    "src": "src/routes/courses/index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js",
+      "_useSuspenseQuery-BHvl87w7.js"
+    ]
+  },
+  "src/routes/courses/route.tsx?tsr-split=component": {
+    "file": "assets/route-8Zvv3iHv.js",
+    "name": "route",
+    "src": "src/routes/courses/route.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js"
+    ]
+  },
+  "src/routes/courses_.$postId.deep.tsx?tsr-split=component": {
+    "file": "assets/courses_._postId.deep-ZdLuKCLM.js",
+    "name": "courses_._postId.deep",
+    "src": "src/routes/courses_.$postId.deep.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js",
+      "_useSuspenseQuery-BHvl87w7.js"
+    ]
+  },
+  "src/routes/courses_.$postId.deep.tsx?tsr-split=errorComponent": {
+    "file": "assets/courses_._postId.deep-DpQfQayF.js",
+    "name": "courses_._postId.deep",
+    "src": "src/routes/courses_.$postId.deep.tsx?tsr-split=errorComponent",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js"
+    ]
+  },
+  "src/routes/deferred.tsx?tsr-split=component": {
+    "file": "assets/deferred-LNdjt4UV.js",
+    "name": "deferred",
+    "src": "src/routes/deferred.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js",
+      "_useSuspenseQuery-BHvl87w7.js"
+    ]
+  },
+  "src/routes/game/blind-box-game.tsx?tsr-split=component": {
+    "file": "assets/blind-box-game-Dvu2jrQs.js",
+    "name": "blind-box-game",
+    "src": "src/routes/game/blind-box-game.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js",
+      "_refresh-cw-XXV2z-LI.js"
+    ]
+  },
+  "src/routes/game/link-game.tsx?tsr-split=component": {
+    "file": "assets/link-game-CBhNHWuq.js",
+    "name": "link-game",
+    "src": "src/routes/game/link-game.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js",
+      "_refresh-cw-XXV2z-LI.js"
+    ]
+  },
+  "src/routes/game/order-game.tsx?tsr-split=component": {
+    "file": "assets/order-game-CtD1VAUI.js",
+    "name": "order-game",
+    "src": "src/routes/game/order-game.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js"
+    ]
+  },
+  "src/routes/index.tsx?tsr-split=component": {
+    "file": "assets/index-CO2qWX1Q.js",
+    "name": "index",
+    "src": "src/routes/index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js"
+    ]
+  },
+  "virtual:$vinxi/handler/client": {
+    "file": "assets/client-Drowo3nh.js",
+    "name": "client",
+    "src": "virtual:$vinxi/handler/client",
+    "isEntry": true,
+    "imports": [
+      "_client-BgVU6seZ.js"
+    ]
+  }
+}

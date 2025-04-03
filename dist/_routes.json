@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "include": [
+    "/*"
+  ],
+  "exclude": [
+    "/android-chrome-192x192.png",
+    "/android-chrome-512x512.png",
+    "/apple-touch-icon.png",
+    "/favicon-16x16.png",
+    "/favicon-32x32.png",
+    "/favicon.ico",
+    "/favicon.png",
+    "/site.webmanifest",
+    "/assets/app-sM_Fki-C.css",
+    "/_build/.vite/manifest.json",
+    "/_build/assets/__vite-browser-external-BIHI7g3E.js",
+    "/_build/assets/_nested-layout-BgwYaAoO.js",
+    "/_build/assets/_pathlessLayout-CCbfyciE.js",
+    "/_build/assets/_postId-BvlBLc-A.js",
+    "/_build/assets/_postId-BWczc5T3.js",
+    "/_build/assets/_postId-COMxO3ZL.js",
+    "/_build/assets/_postId-D_lUi16H.js",
+    "/_build/assets/_postId-DoP7l1NR.js",
+    "/_build/assets/app-sM_Fki-C.css",
+    "/_build/assets/blind-box-game-Dvu2jrQs.js",
+    "/_build/assets/client-BgVU6seZ.js",
+    "/_build/assets/client-Drowo3nh.js",
+    "/_build/assets/courses_._postId.deep-DpQfQayF.js",
+    "/_build/assets/courses_._postId.deep-ZdLuKCLM.js",
+    "/_build/assets/deferred-LNdjt4UV.js",
+    "/_build/assets/index-B3fXfjPI.js",
+    "/_build/assets/index-CO2qWX1Q.js",
+    "/_build/assets/link-game-CBhNHWuq.js",
+    "/_build/assets/order-game-CtD1VAUI.js",
+    "/_build/assets/refresh-cw-XXV2z-LI.js",
+    "/_build/assets/route-8Zvv3iHv.js",
+    "/_build/assets/route-a-B_9mkVEy.js",
+    "/_build/assets/route-b-B89cdPOQ.js",
+    "/_build/assets/useSuspenseQuery-BHvl87w7.js"
+  ]
+}

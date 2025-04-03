@@ -1,0 +1,2 @@
+import{a as o,O as e}from"../nitro/nitro.mjs";import"node:buffer";import"node:process";import"node:timers";import"node:events";import"node:async_hooks";import"node:url";import"node:stream";import"node:stream/web";const r=function(){return o.jsxs("div",{className:"p-2",children:[o.jsx("div",{children:"I'm a pathless layout"}),o.jsx("div",{children:o.jsx(e,{})})]})};export{r as component};
+//# sourceMappingURL=_pathlessLayout-q1b4P3Bq.mjs.map

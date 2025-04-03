@@ -1,0 +1,17 @@
+{
+  "files.watcherExclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "search.exclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "files.readonlyInclude": {
+    "**/routeTree.gen.ts": true
+  },
+  // allow autocomplete for ArkType expressions like "string | num"
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  // prioritize ArkType's "type" for autoimports
+  "typescript.preferences.autoImportSpecifierExcludeRegexes": ["^(node:)?os$"]
+}
