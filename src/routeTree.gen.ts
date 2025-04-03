@@ -18,6 +18,7 @@ import { Route as PostIdImport } from './routes/$postId'
 import { Route as CoursesRouteImport } from './routes/courses/route'
 import { Route as IndexImport } from './routes/index'
 import { Route as CoursesIndexImport } from './routes/courses/index'
+import { Route as GameWordleAiImport } from './routes/game/wordle-ai'
 import { Route as GameOrderGameImport } from './routes/game/order-game'
 import { Route as GameLinkGameImport } from './routes/game/link-game'
 import { Route as GameBlindBoxGameImport } from './routes/game/blind-box-game'
@@ -68,6 +69,12 @@ const CoursesIndexRoute = CoursesIndexImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => CoursesRouteRoute,
+} as any)
+
+const GameWordleAiRoute = GameWordleAiImport.update({
+  id: '/game/wordle-ai',
+  path: '/game/wordle-ai',
+  getParentRoute: () => rootRoute,
 } as any)
 
 const GameOrderGameRoute = GameOrderGameImport.update({
@@ -202,6 +209,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GameOrderGameImport
       parentRoute: typeof rootRoute
     }
+    '/game/wordle-ai': {
+      id: '/game/wordle-ai'
+      path: '/game/wordle-ai'
+      fullPath: '/game/wordle-ai'
+      preLoaderRoute: typeof GameWordleAiImport
+      parentRoute: typeof rootRoute
+    }
     '/courses/': {
       id: '/courses/'
       path: '/'
@@ -290,6 +304,7 @@ export interface FileRoutesByFullPath {
   '/game/blind-box-game': typeof GameBlindBoxGameRoute
   '/game/link-game': typeof GameLinkGameRoute
   '/game/order-game': typeof GameOrderGameRoute
+  '/game/wordle-ai': typeof GameWordleAiRoute
   '/courses/': typeof CoursesIndexRoute
   '/route-a': typeof PathlessLayoutNestedLayoutRouteARoute
   '/route-b': typeof PathlessLayoutNestedLayoutRouteBRoute
@@ -306,6 +321,7 @@ export interface FileRoutesByTo {
   '/game/blind-box-game': typeof GameBlindBoxGameRoute
   '/game/link-game': typeof GameLinkGameRoute
   '/game/order-game': typeof GameOrderGameRoute
+  '/game/wordle-ai': typeof GameWordleAiRoute
   '/courses': typeof CoursesIndexRoute
   '/route-a': typeof PathlessLayoutNestedLayoutRouteARoute
   '/route-b': typeof PathlessLayoutNestedLayoutRouteBRoute
@@ -325,6 +341,7 @@ export interface FileRoutesById {
   '/game/blind-box-game': typeof GameBlindBoxGameRoute
   '/game/link-game': typeof GameLinkGameRoute
   '/game/order-game': typeof GameOrderGameRoute
+  '/game/wordle-ai': typeof GameWordleAiRoute
   '/courses/': typeof CoursesIndexRoute
   '/_pathlessLayout/_nested-layout/route-a': typeof PathlessLayoutNestedLayoutRouteARoute
   '/_pathlessLayout/_nested-layout/route-b': typeof PathlessLayoutNestedLayoutRouteBRoute
@@ -344,6 +361,7 @@ export interface FileRouteTypes {
     | '/game/blind-box-game'
     | '/game/link-game'
     | '/game/order-game'
+    | '/game/wordle-ai'
     | '/courses/'
     | '/route-a'
     | '/route-b'
@@ -359,6 +377,7 @@ export interface FileRouteTypes {
     | '/game/blind-box-game'
     | '/game/link-game'
     | '/game/order-game'
+    | '/game/wordle-ai'
     | '/courses'
     | '/route-a'
     | '/route-b'
@@ -376,6 +395,7 @@ export interface FileRouteTypes {
     | '/game/blind-box-game'
     | '/game/link-game'
     | '/game/order-game'
+    | '/game/wordle-ai'
     | '/courses/'
     | '/_pathlessLayout/_nested-layout/route-a'
     | '/_pathlessLayout/_nested-layout/route-b'
@@ -393,6 +413,7 @@ export interface RootRouteChildren {
   GameBlindBoxGameRoute: typeof GameBlindBoxGameRoute
   GameLinkGameRoute: typeof GameLinkGameRoute
   GameOrderGameRoute: typeof GameOrderGameRoute
+  GameWordleAiRoute: typeof GameWordleAiRoute
   CoursesPostIdDeepRoute: typeof CoursesPostIdDeepRoute
 }
 
@@ -406,6 +427,7 @@ const rootRouteChildren: RootRouteChildren = {
   GameBlindBoxGameRoute: GameBlindBoxGameRoute,
   GameLinkGameRoute: GameLinkGameRoute,
   GameOrderGameRoute: GameOrderGameRoute,
+  GameWordleAiRoute: GameWordleAiRoute,
   CoursesPostIdDeepRoute: CoursesPostIdDeepRoute,
 }
 
@@ -428,6 +450,7 @@ export const routeTree = rootRoute
         "/game/blind-box-game",
         "/game/link-game",
         "/game/order-game",
+        "/game/wordle-ai",
         "/courses_/$postId/deep"
       ]
     },
@@ -476,6 +499,9 @@ export const routeTree = rootRoute
     },
     "/game/order-game": {
       "filePath": "game/order-game.tsx"
+    },
+    "/game/wordle-ai": {
+      "filePath": "game/wordle-ai.tsx"
     },
     "/courses/": {
       "filePath": "courses/index.tsx",
