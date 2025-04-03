@@ -1,16 +1,15 @@
-import { defineConfig } from "@tanstack/react-start/config";
-import tsConfigPaths from "vite-tsconfig-paths";
-import tailwindcss from "@tailwindcss/vite";
-import { cloudflare } from "unenv";
+import { defineConfig } from '@tanstack/react-start/config';
+import tsConfigPaths from 'vite-tsconfig-paths';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   tsr: {
-    appDirectory: "src",
+    appDirectory: 'src',
   },
   vite: {
     plugins: [
       tsConfigPaths({
-        projects: ["./tsconfig.json"],
+        projects: ['./tsconfig.json'],
       }),
       tailwindcss(),
     ],
@@ -19,7 +18,6 @@ export default defineConfig({
     },
   },
   server: {
-    preset: "cloudflare-pages",
-    unenv: cloudflare,
+    preset: 'vercel',
   },
 });
