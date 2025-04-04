@@ -18,8 +18,10 @@ import { Route as PostIdImport } from './routes/$postId'
 import { Route as CoursesRouteImport } from './routes/courses/route'
 import { Route as IndexImport } from './routes/index'
 import { Route as CoursesIndexImport } from './routes/courses/index'
+import { Route as GameOrderingGameImport } from './routes/game/ordering-game'
 import { Route as GameOrderGameImport } from './routes/game/order-game'
 import { Route as GameLinkGameImport } from './routes/game/link-game'
+import { Route as GameBubbleGameImport } from './routes/game/bubble-game'
 import { Route as GameBlindBoxGameImport } from './routes/game/blind-box-game'
 import { Route as CoursesPostIdImport } from './routes/courses/$postId'
 import { Route as PathlessLayoutNestedLayoutImport } from './routes/_pathlessLayout/_nested-layout'
@@ -70,6 +72,12 @@ const CoursesIndexRoute = CoursesIndexImport.update({
   getParentRoute: () => CoursesRouteRoute,
 } as any)
 
+const GameOrderingGameRoute = GameOrderingGameImport.update({
+  id: '/game/ordering-game',
+  path: '/game/ordering-game',
+  getParentRoute: () => rootRoute,
+} as any)
+
 const GameOrderGameRoute = GameOrderGameImport.update({
   id: '/game/order-game',
   path: '/game/order-game',
@@ -79,6 +87,12 @@ const GameOrderGameRoute = GameOrderGameImport.update({
 const GameLinkGameRoute = GameLinkGameImport.update({
   id: '/game/link-game',
   path: '/game/link-game',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const GameBubbleGameRoute = GameBubbleGameImport.update({
+  id: '/game/bubble-game',
+  path: '/game/bubble-game',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -188,6 +202,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GameBlindBoxGameImport
       parentRoute: typeof rootRoute
     }
+    '/game/bubble-game': {
+      id: '/game/bubble-game'
+      path: '/game/bubble-game'
+      fullPath: '/game/bubble-game'
+      preLoaderRoute: typeof GameBubbleGameImport
+      parentRoute: typeof rootRoute
+    }
     '/game/link-game': {
       id: '/game/link-game'
       path: '/game/link-game'
@@ -200,6 +221,13 @@ declare module '@tanstack/react-router' {
       path: '/game/order-game'
       fullPath: '/game/order-game'
       preLoaderRoute: typeof GameOrderGameImport
+      parentRoute: typeof rootRoute
+    }
+    '/game/ordering-game': {
+      id: '/game/ordering-game'
+      path: '/game/ordering-game'
+      fullPath: '/game/ordering-game'
+      preLoaderRoute: typeof GameOrderingGameImport
       parentRoute: typeof rootRoute
     }
     '/courses/': {
@@ -288,8 +316,10 @@ export interface FileRoutesByFullPath {
   '/redirect': typeof RedirectRoute
   '/courses/$postId': typeof CoursesPostIdRoute
   '/game/blind-box-game': typeof GameBlindBoxGameRoute
+  '/game/bubble-game': typeof GameBubbleGameRoute
   '/game/link-game': typeof GameLinkGameRoute
   '/game/order-game': typeof GameOrderGameRoute
+  '/game/ordering-game': typeof GameOrderingGameRoute
   '/courses/': typeof CoursesIndexRoute
   '/route-a': typeof PathlessLayoutNestedLayoutRouteARoute
   '/route-b': typeof PathlessLayoutNestedLayoutRouteBRoute
@@ -304,8 +334,10 @@ export interface FileRoutesByTo {
   '/redirect': typeof RedirectRoute
   '/courses/$postId': typeof CoursesPostIdRoute
   '/game/blind-box-game': typeof GameBlindBoxGameRoute
+  '/game/bubble-game': typeof GameBubbleGameRoute
   '/game/link-game': typeof GameLinkGameRoute
   '/game/order-game': typeof GameOrderGameRoute
+  '/game/ordering-game': typeof GameOrderingGameRoute
   '/courses': typeof CoursesIndexRoute
   '/route-a': typeof PathlessLayoutNestedLayoutRouteARoute
   '/route-b': typeof PathlessLayoutNestedLayoutRouteBRoute
@@ -323,8 +355,10 @@ export interface FileRoutesById {
   '/_pathlessLayout/_nested-layout': typeof PathlessLayoutNestedLayoutRouteWithChildren
   '/courses/$postId': typeof CoursesPostIdRoute
   '/game/blind-box-game': typeof GameBlindBoxGameRoute
+  '/game/bubble-game': typeof GameBubbleGameRoute
   '/game/link-game': typeof GameLinkGameRoute
   '/game/order-game': typeof GameOrderGameRoute
+  '/game/ordering-game': typeof GameOrderingGameRoute
   '/courses/': typeof CoursesIndexRoute
   '/_pathlessLayout/_nested-layout/route-a': typeof PathlessLayoutNestedLayoutRouteARoute
   '/_pathlessLayout/_nested-layout/route-b': typeof PathlessLayoutNestedLayoutRouteBRoute
@@ -342,8 +376,10 @@ export interface FileRouteTypes {
     | '/redirect'
     | '/courses/$postId'
     | '/game/blind-box-game'
+    | '/game/bubble-game'
     | '/game/link-game'
     | '/game/order-game'
+    | '/game/ordering-game'
     | '/courses/'
     | '/route-a'
     | '/route-b'
@@ -357,8 +393,10 @@ export interface FileRouteTypes {
     | '/redirect'
     | '/courses/$postId'
     | '/game/blind-box-game'
+    | '/game/bubble-game'
     | '/game/link-game'
     | '/game/order-game'
+    | '/game/ordering-game'
     | '/courses'
     | '/route-a'
     | '/route-b'
@@ -374,8 +412,10 @@ export interface FileRouteTypes {
     | '/_pathlessLayout/_nested-layout'
     | '/courses/$postId'
     | '/game/blind-box-game'
+    | '/game/bubble-game'
     | '/game/link-game'
     | '/game/order-game'
+    | '/game/ordering-game'
     | '/courses/'
     | '/_pathlessLayout/_nested-layout/route-a'
     | '/_pathlessLayout/_nested-layout/route-b'
@@ -391,8 +431,10 @@ export interface RootRouteChildren {
   DeferredRoute: typeof DeferredRoute
   RedirectRoute: typeof RedirectRoute
   GameBlindBoxGameRoute: typeof GameBlindBoxGameRoute
+  GameBubbleGameRoute: typeof GameBubbleGameRoute
   GameLinkGameRoute: typeof GameLinkGameRoute
   GameOrderGameRoute: typeof GameOrderGameRoute
+  GameOrderingGameRoute: typeof GameOrderingGameRoute
   CoursesPostIdDeepRoute: typeof CoursesPostIdDeepRoute
 }
 
@@ -404,8 +446,10 @@ const rootRouteChildren: RootRouteChildren = {
   DeferredRoute: DeferredRoute,
   RedirectRoute: RedirectRoute,
   GameBlindBoxGameRoute: GameBlindBoxGameRoute,
+  GameBubbleGameRoute: GameBubbleGameRoute,
   GameLinkGameRoute: GameLinkGameRoute,
   GameOrderGameRoute: GameOrderGameRoute,
+  GameOrderingGameRoute: GameOrderingGameRoute,
   CoursesPostIdDeepRoute: CoursesPostIdDeepRoute,
 }
 
@@ -426,8 +470,10 @@ export const routeTree = rootRoute
         "/deferred",
         "/redirect",
         "/game/blind-box-game",
+        "/game/bubble-game",
         "/game/link-game",
         "/game/order-game",
+        "/game/ordering-game",
         "/courses_/$postId/deep"
       ]
     },
@@ -471,11 +517,17 @@ export const routeTree = rootRoute
     "/game/blind-box-game": {
       "filePath": "game/blind-box-game.tsx"
     },
+    "/game/bubble-game": {
+      "filePath": "game/bubble-game.tsx"
+    },
     "/game/link-game": {
       "filePath": "game/link-game.tsx"
     },
     "/game/order-game": {
       "filePath": "game/order-game.tsx"
+    },
+    "/game/ordering-game": {
+      "filePath": "game/ordering-game.tsx"
     },
     "/courses/": {
       "filePath": "courses/index.tsx",
